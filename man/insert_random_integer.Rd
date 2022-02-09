@@ -15,3 +15,8 @@ A string representing a randomly sampled integer
 \description{
 Insert random integer at cursor
 }
+\examples{
+\dontrun{
+insert_random_integer()
+}
+}

@@ -3,13 +3,21 @@
 #'
 #' @param maxval Maximum random integer
 #' @param minval Minimum random integer
+#' @param seed Random seed for testing the generator, should not be used
 #'
 #' @return A sampled integer
 #' @export
-get_random_integer <- function(maxval = 1e8, minval = 0) {
-  fmt <- "https://www.random.org/integers/?num=1&min=%d&max=%d&col=1&base=10&format=plain&rnd=new"
+#' @examples
+#' get_random_integer()
+get_random_integer <- function(maxval = 1e8, minval = 0, seed = NULL) {
+  link <- sprintf(
+    "https://www.random.org/integers/?num=1&min=%d&max=%d&col=1&base=10&format=plain&rnd=%s",
+    as.integer(minval),
+    as.integer(maxval),
+    ifelse(is.null(seed), "new", paste0("id.", seed))
+  )
 
-  con <- url(sprintf(fmt, as.integer(minval), as.integer(maxval)), open = "r")
+  con <- url(link, open = "r")
   sampled_integer <- as.integer(readLines(con))
   close(con)
 
@@ -23,6 +31,10 @@ get_random_integer <- function(maxval = 1e8, minval = 0) {
 #'
 #' @return A string representing a randomly sampled integer
 #' @export
+#' @examples
+#' \dontrun{
+#' insert_random_integer()
+#' }
 insert_random_integer <- function(...) {
   string <- sprintf("%dL", get_random_integer())
   rstudioapi::insertText(text = string)
