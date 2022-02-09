@@ -1,4 +1,4 @@
-# randomintaddin 0.0.3
+# randomintaddin 0.1.0
 
 * Added `insert_random_set_seed()`
 
