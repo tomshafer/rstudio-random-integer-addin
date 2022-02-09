@@ -1,0 +1,4 @@
+Name: Insert Random Integer
+Description: Inserts a random integer at the current position
+Binding: insert_random_integer
+Interactive: false

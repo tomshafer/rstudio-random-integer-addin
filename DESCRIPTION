@@ -1,0 +1,14 @@
+Package: randomintaddin
+Title: RStudio Addin to Insert Random Integers or Seeds
+Version: 0.0.1
+Authors@R: 
+    person("Tom", "Shafer", NULL, "tom@tshafer.com", c("aut", "cre"))
+Description: Query random.org for a single random integer
+    and insert this integer into the current document as,
+    e.g., a random seed.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    rstudioapi
