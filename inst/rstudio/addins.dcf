@@ -2,3 +2,8 @@ Name: Insert Random Integer
 Description: Inserts a random integer at the current position
 Binding: insert_random_integer
 Interactive: false
+
+Name: Insert Random Seed
+Description: Inserts a `set.seed()` call with a random integer at the current position
+Binding: insert_random_set_seed
+Interactive: false

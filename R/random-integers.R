@@ -39,3 +39,20 @@ insert_random_integer <- function(...) {
   string <- sprintf("%dL", get_random_integer())
   rstudioapi::insertText(text = string)
 }
+
+
+#' Insert `set.seed()` at cursor with random integer
+#'
+#' @param ... Arguments passed to [get_random_integer()]
+#'
+#' @return A `set.seed()` string
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' insert_random_set_seed()
+#' }
+insert_random_set_seed <- function(...) {
+  string <- sprintf("set.seed(%dL)", get_random_integer())
+  rstudioapi::insertText(text = string)
+}
