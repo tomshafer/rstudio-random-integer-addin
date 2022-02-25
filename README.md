@@ -1,6 +1,10 @@
 # Insert a Random Integer Into the Current Document
 
-[![pkgcheck](https://github.com/tomshafer/rstudio-random-integer-addin/workflows/pkgcheck/badge.svg)](https://github.com/tomshafer/rstudio-random-integer-addin/actions?query=workflow%3Apkgcheck)
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/tomshafer/rstudio-random-integer-addin/workflows/R-CMD-check/badge.svg)](https://github.com/tomshafer/rstudio-random-integer-addin/actions)
+[![lint](https://github.com/tomshafer/rstudio-random-integer-addin/workflows/lint/badge.svg)](https://github.com/tomshafer/rstudio-random-integer-addin/actions)
+[![test-coverage](https://github.com/tomshafer/rstudio-random-integer-addin/workflows/test-coverage/badge.svg)](https://github.com/tomshafer/rstudio-random-integer-addin/actions)
+<!-- badges: end -->
 
 
 Quickly gather a random integer from [random.org][] and
