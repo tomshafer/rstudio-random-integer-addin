@@ -1,3 +1,7 @@
+# randomintaddin 0.2.0
+
+* Added `insert_assign_random_set_seed()`
+
 # randomintaddin 0.1.0
 
 * Added `insert_random_set_seed()`
