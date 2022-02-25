@@ -1,3 +1,8 @@
+# randomintaddin 0.2.1
+
+* Actually registered the new addin with RStudio
+* Updated the documentation
+
 # randomintaddin 0.2.0
 
 * Added `insert_assign_random_set_seed()`

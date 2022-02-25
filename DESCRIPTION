@@ -1,6 +1,6 @@
 Package: randomintaddin
 Title: RStudio Addin to Insert Random Integers or Seeds
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     person("Tom", "Shafer", , "tom@tshafer.com", role = c("aut", "cre"))
 Description: Query random.org for a single random integer and insert this

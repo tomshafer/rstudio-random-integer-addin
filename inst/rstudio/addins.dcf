@@ -7,3 +7,8 @@ Name: Insert Random Seed
 Description: Inserts a `set.seed()` call with a random integer at the current position
 Binding: insert_random_set_seed
 Interactive: false
+
+Name: Insert and Assign Random Seed Variable
+Description: Inserts a `set.seed(SEED <- <random integer>)` call at the current position
+Binding: insert_assign_random_set_seed
+Interactive: false

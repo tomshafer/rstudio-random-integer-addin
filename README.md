@@ -21,10 +21,11 @@ remotes::install_github("tomshafer/rstudio-random-integer-addin")
 
 ## Use
 
-This package installs two [RStudio Addins][]:
+This package installs three [RStudio Addins][]:
 
 1. *Insert Random Integer*, which inserts an integer from [random.org][]
 2. *Insert Random Seed*, which inserts a full `set.seed()` statement with a random integer
+2. *Insert and Assign Random Seed Variable*, which inserts the statement `set.seed(SEED <- <random integer>)`, assigning `SEED` for later use.
 
 RStudio's "Tools > Modify Keyboard Shortcuts…" menu allows
 the user to bind one or both of these addins to keyboard
